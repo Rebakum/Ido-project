@@ -232,11 +232,9 @@ h2 {
 
 /* How to section */
 /* Section Wrapper */
-.how-to-section {
+.how-to-section,
+.testmonial-section {
   padding: 60px 20px;
-  background: linear-gradient(135deg, #f9f9f9, #ffffff);
-  border-radius: 8px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   margin-top: 50px;
 }
 
