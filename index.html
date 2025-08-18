@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>I DO</title>
+  </head>
+  <body>
+    <header class="navbar-container">
+      <div class="container">
+        <nav class="navbar">
+          <!-- Logo -->
+          <div class="logo">
+            <a href="/">
+              <img src="./assests/image/ido-logo.png" alt="Logo" />
+            </a>
+           
+          </div>
+           
+
+          <!-- Menu Links -->
+          <div class="links">
+            <a href="/asana">Tools</a>
+            <a href="https://ido-clarity.com">Consulting</a>
+            <a href="https://ido-clarity.com/all-our-asana-ebooks-for-free/"
+              >Ebooks</a
+            >
+            <a href="https://11153d44.sibforms.com/serve/MUIFANFblRLas0e..."
+              >Newsletter</a
+            >
+          </div>
+
+          <!-- Right Side Items -->
+          <div class="right-section">
+            <img src="./assests//image/asana.png" class="icon" alt="Asana" />
+            <div class="token-profile">
+              <a href="/token" class="get-token">Access advanced features 
+                
+              </a>
+              <img _ngcontent-ng-c1052771670="" src="./assests/image/question.png" class="token" tabindex="0">
+            </div>
+          </div>
+          <!-- Mobile toggle (hidden checkbox) -->
+            <div class="humburger">
+            <img src="./assests/image/hamburger.png" alt="Menu" id="hamburger-btn" />
+
+            <!-- Menu Links -->
+            <div class="toggle menu">
+              <img src="./assests//image/asana.png" class="icon" alt="Asana" />
+                    
+                  <div class="token-profile">
+                    <a href="/token" class="get-token">Access advanced features</a>
+                    <img _ngcontent-ng-c1052771670="" src="./assests/image/question.png" class="token" tabindex="0">
+                  </div>
+               
+                <a href="/asana">Tools</a>
+                <a href="https://ido-clarity.com">Consulting</a>
+                <a href="https://ido-clarity.com/all-our-asana-ebooks-for-free/">Ebooks</a>
+                <a href="https://11153d44.sibforms.com/serve/MUIFANFblRLas0e...">Newsletter</a>
+            </div>
+            </div>
+
+          
+          </div>
+        </nav>
+      </div>
+    </header>
+  </body>
+
+  <script>
+document.getElementById("hamburger-btn").addEventListener("click", function(e) {
+  e.preventDefault(); // stop link navigation if it’s inside <a>
+  document.querySelector(".toggle.menu").classList.toggle("active");
+});
+</script>
+
+</html>

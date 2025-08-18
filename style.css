@@ -1,0 +1,167 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar Container */
+.navbar-container {
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}
+
+/* Logo */
+.logo img {
+  height: 40px;
+}
+
+/* Desktop Links */
+.links {
+  display: flex;
+  gap: 25px;
+}
+
+.links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.links a:hover {
+  color: #ff8a05;
+}
+
+/* Right Section */
+/* .right-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+} */
+
+.right-section .icon {
+  height: 28px;
+  cursor: pointer;
+}
+.right-section .token-profile {
+  display: flex;
+  gap: 3px;
+}
+.right-section .token-profile .token {
+  height: 20px;
+  cursor: pointer;
+}
+
+.get-token {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+}
+
+.get-token:hover {
+  color: #ff8a05;
+}
+
+/* Hamburger */
+.humburger {
+  display: none;
+  cursor: pointer;
+}
+
+.humburger img {
+  height: 28px;
+}
+
+/* Mobile Styles */
+@media (max-width: 992px) {
+  /* Hide desktop links and right section */
+  .links,
+  .right-section {
+    display: none;
+  }
+
+  /* Show hamburger */
+  .humburger {
+    display: block;
+    position: relative;
+  }
+
+  /* Mobile Menu */
+  .toggle.menu {
+    display: none;
+    flex-direction: column;
+    background: white;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 300px;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease;
+  }
+  .toggle.menu .icon {
+    width: 60px;
+  }
+  .toggle.menu .token-profile {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 3px;
+  }
+
+  .toggle.menu a {
+    padding: 10px 0;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    border-bottom: 1px solid #eee;
+  }
+
+  .toggle.menu a:last-child {
+    border-bottom: none;
+  }
+
+  .toggle.menu a:hover {
+    color: #ff8a05;
+  }
+
+  /* Show menu when active */
+  .toggle.menu.active {
+    display: flex;
+  }
+}
+
+/* Simple fade animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
