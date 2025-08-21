@@ -64,9 +64,9 @@ h2 {
 
 .underline {
   width: 70px;
-  height: 4px;
+  height: 2px;
   border-radius: 3px;
-  background: #333;
+  background: #0238a2;
   margin-top: 8px;
 }
 
@@ -124,7 +124,7 @@ h2 {
   border: 1px solid #fc636b;
   color: #fff;
   display: inline-block;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 600;
   height: 45px;
   line-height: 45px;
@@ -142,7 +142,7 @@ h2 {
   content: "";
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
   width: 0;
   height: 100%;
   background: #fff; /* hover color */
@@ -295,12 +295,19 @@ h2 {
 .quotes blockquote::before {
   content: "❝";
   font-size: 40px;
-  color: #fc636b;
+  color: #d7030d;
   position: absolute;
   top: 10px;
   left: 15px;
   opacity: 0.15;
   font-weight: bold;
+}
+/* testimonial img */
+.quotes blockquote img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  margin: 0 5px 5px;
 }
 
 /* Testimonial Text */
@@ -316,8 +323,9 @@ h2 {
 /* Author */
 .quotes .author {
   font-size: 14px;
+  text-align: justify;
   font-weight: 600;
-  color: #055855;
+  color: #1a0000;
   display: inline-block;
   margin: 5px 15px 0px;
   text-decoration: none;
